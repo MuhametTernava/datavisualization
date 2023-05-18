@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const FooterContainer = styled.div`
-  background-color: #9a7aff;
+  background-color: #4f4e4e;
 
   display: flex;
   flex-direction: row;

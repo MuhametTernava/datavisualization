@@ -82,7 +82,7 @@ const InputData = ({ onSubmit }) => {
             <InputDataContainer key={index}>
               <FormGroup>
                 <Label>
-                  <span className="color-white">Product Name: </span>
+                  <span className="text-dark">Product Name: </span>
                   <Input
                     type="text"
                     value={data.name}
@@ -93,7 +93,7 @@ const InputData = ({ onSubmit }) => {
               </FormGroup>
               <FormGroup>
                 <Label>
-                  <span className="color-white">Product Price: </span>
+                  <span className="text-dark">Product Price: </span>
                   <Input
                     type="number"
                     value={data.price}
@@ -105,7 +105,7 @@ const InputData = ({ onSubmit }) => {
             </InputDataContainer>
           ))}
           <div>
-            <p className="text-center">Select Chart Type:</p>
+            <p className="text-center text-dark">Select Chart Type:</p>
             <ChartCheckBox>
               <ChartCheckLabel>
                 Bar Chart

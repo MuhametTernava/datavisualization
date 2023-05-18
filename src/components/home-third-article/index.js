@@ -6,12 +6,12 @@ import {
   SubBannerBoxTitle,
   SubBannerBoxParagaph,
   ButtonContainer,
-  Button,
+  HomeButton,
   ImageTemplate,
-} from "./layouts";
+} from "../../layouts/layouts";
 import { Link, useNavigate } from "react-router-dom";
 
-import StickerPen from "../../assets/images/stickerpen.png";
+import UploadPic from "../../assets/images/liveDataIcon.png";
 import { Container } from "../../layouts";
 
 const ThirdArticle = () => {
@@ -22,7 +22,7 @@ const ThirdArticle = () => {
           <SubBannerContainer>
             {" "}
             <ImageTemplate
-              src={StickerPen}
+              src={UploadPic}
               alt="Metrics Image"
             ></ImageTemplate>{" "}
             <SubBannerBoxTitle>Live Data Visualization</SubBannerBoxTitle>
@@ -38,14 +38,14 @@ const ThirdArticle = () => {
               time, enabling you to make informed decisions with confidence.
             </SubBannerBoxParagaph>
             <ButtonContainer>
-              <Button>
+              <HomeButton>
                 <Link
-                  className="text-decoration-none color-white"
+                  className="text-decoration-none "
                   to="/real-time-visualization"
                 >
                   Get Started
                 </Link>
-              </Button>
+              </HomeButton>
             </ButtonContainer>
           </SubBannerContainer>
         </BannerContainer>

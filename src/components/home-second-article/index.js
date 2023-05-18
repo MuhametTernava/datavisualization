@@ -6,11 +6,11 @@ import {
   SubBannerBoxTitle,
   SubBannerBoxParagaph,
   ButtonContainer,
-  Button,
+  HomeButton,
   ImageTemplate,
-} from "./layouts";
+} from "../../layouts/layouts";
 
-import StickerPen from "../../assets/images/stickerpen.png";
+import ExcelIcon from "../../assets/images/excelGroup.png";
 import { Container } from "../../layouts";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -22,13 +22,13 @@ const SecondArticle = () => {
           <SubBannerContainer>
             {" "}
             <ImageTemplate
-              src={StickerPen}
+              src={ExcelIcon}
               alt="Metrics Image"
             ></ImageTemplate>{" "}
-            <SubBannerBoxTitle>
+            <SubBannerBoxTitle className="text-dark ">
               Upload-Based Data Visualization
             </SubBannerBoxTitle>
-            <SubBannerBoxParagaph>
+            <SubBannerBoxParagaph className="text-dark ">
               Our Upload-Based Data Visualization service provides a seamless
               way to generate visualizations by uploading real-time data. Simply
               select the file containing your data, and our tool will analyze
@@ -37,14 +37,14 @@ const SecondArticle = () => {
               our service makes data visualization hassle-free.
             </SubBannerBoxParagaph>
             <ButtonContainer>
-              <Button>
+              <HomeButton>
                 <Link
-                  className="text-decoration-none color-white"
+                  className="text-decoration-none"
                   to="/upload-visualization"
                 >
                   Get Started
                 </Link>
-              </Button>
+              </HomeButton>
             </ButtonContainer>
           </SubBannerContainer>
         </BannerContainer>

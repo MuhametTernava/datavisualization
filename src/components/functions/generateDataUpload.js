@@ -61,10 +61,15 @@ const UploadData = ({ onFileUpload }) => {
     <DisplayingInputContainer>
       <InputFieldContainer>
         <ProductLabel>Choose your file:</ProductLabel>
-        <input type="file" accept=".xlsx" onChange={handleFileChange} />
+        <input
+          className="bg-dark"
+          type="file"
+          accept=".xlsx"
+          onChange={handleFileChange}
+        />
 
         <div>
-          <p className="text-center">Select Chart Type:</p>
+          <p className="text-center text-dark">Select Chart Type:</p>
           <ChartCheckBox>
             <ChartCheckLabel>
               Bar Chart

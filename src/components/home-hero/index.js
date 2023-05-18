@@ -20,21 +20,21 @@ const HeroPage = () => {
       <div className="bgwhite  p-10">
         <BannerContainer>
           <HalfBanner className="d-flex flex-column justify-center align-center">
-            <FirstBannerBoxTitle className="text-secondary">
+            <FirstBannerBoxTitle className="text-dark">
               Let's analyze some data!
             </FirstBannerBoxTitle>
-            <FirstBannerBoxParagaph className="color-black">
+            <FirstBannerBoxParagaph className="text-dark">
               Welcome to our Business Data Visualization tool! This tool is
               designed to help you visualize and analyze your business data in a
               clear and interactive way. To get started, please select your
               preferred method of data input.
-              <div className="color-black">
+              <div className="text-dark">
                 How would you like to input the data for generating the
                 visualizations?
               </div>
             </FirstBannerBoxParagaph>
             <ButtonContainer>
-              <Button>
+              <Button className="">
                 <Link
                   className="text-decoration-none color-white"
                   to="/typing-visualization"
@@ -42,7 +42,7 @@ const HeroPage = () => {
                   Typing
                 </Link>
               </Button>
-              <Button>
+              <Button className="bg-dark">
                 <Link
                   className="text-decoration-none color-white"
                   to="/upload-visualization"

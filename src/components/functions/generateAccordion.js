@@ -21,23 +21,20 @@ const UseAccordion = (accordionText) => {
       </AccordionButton>
       {isExpanded && (
         <div className="accordion-content" id="accordion-content">
-          <p>
+          <p className="text-dark">
             For optimal data display, please take note of the following
             guidelines when uploading your data:
           </p>
           <ol>
-            <li>File Format: Upload Excel files (.xlsx) only.</li>
-            <li>
+            <li className="text-dark">
+              File Format: Upload Excel files (.xlsx) only.
+            </li>
+            <li className="text-dark">
               Column Requirements: Ensure your Excel files have two specific
               columns: "ProductName" and "TotalSales".
             </li>
           </ol>
-          <p>
-            {" "}
-            Simply input real time data. We will transform automatically into
-            interactive charts.
-          </p>
-          <p>
+          <p className="text-dark">
             Following these guidelines will enable our system to effectively
             visualize your data and provide accurate insights. Thank you!
           </p>

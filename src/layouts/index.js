@@ -16,7 +16,7 @@ export const Container = styled.div`
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #ebf1fb;
+  background-color: #4f4e4e;
 `;
 
 export const DivHalf = styled.div`

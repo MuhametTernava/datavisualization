@@ -6,12 +6,12 @@ import {
   SubBannerBoxTitle,
   SubBannerBoxParagaph,
   ButtonContainer,
-  Button,
+  HomeButton,
   ImageTemplate,
-} from "./layouts";
+} from "../../layouts/layouts";
 import { Link, useNavigate } from "react-router-dom";
 
-import StickerPen from "../../assets/images/stickerpen.png";
+import StickerPen from "../../assets/images/penIcon.png";
 import { Container } from "../../layouts";
 
 const FirstArticle = () => {
@@ -38,14 +38,14 @@ const FirstArticle = () => {
               with ease.
             </SubBannerBoxParagaph>
             <ButtonContainer>
-              <Button>
+              <HomeButton>
                 <Link
-                  className="text-decoration-none color-white"
+                  className="text-decoration-none"
                   to="/typing-visualization"
                 >
                   Get Started
                 </Link>
-              </Button>
+              </HomeButton>
             </ButtonContainer>
           </SubBannerContainer>
         </BannerContainer>

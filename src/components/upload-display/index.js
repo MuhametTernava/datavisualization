@@ -77,7 +77,7 @@ const UploadDisplayingData = () => {
               <DisplayingSubContainerSecond>
                 <InsightBox>
                   <InsightInfo>
-                    <span className="bg-primary font-20 p-10 border-none mt-20 w-400 text-center  ">
+                    <span className="text-dark font-20 p-10 border-none mt-20 w-400 text-center  ">
                       {" "}
                       Total all products sales:
                     </span>
@@ -87,7 +87,7 @@ const UploadDisplayingData = () => {
                     </span>
                   </InsightInfo>{" "}
                   <InsightInfo>
-                    <span className="bg-primary font-20 p-10 border-none mt-20 w-400  text-center  ">
+                    <span className="text-dark font-20 p-10 border-none mt-20 w-400  text-center  ">
                       {" "}
                       The best selling product:
                     </span>

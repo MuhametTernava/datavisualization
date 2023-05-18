@@ -66,7 +66,7 @@ const RealTimeDisplayingData = () => {
             <DisplayingSubContainerSecond>
               <InsightBox>
                 <InsightInfo>
-                  <span className="bg-primary font-20 p-10 border-none mt-20 w-400 text-center  ">
+                  <span className="text-dark font-20 p-10 border-none mt-20 w-400 text-center  ">
                     {" "}
                     Total all products sales:
                   </span>
@@ -75,7 +75,7 @@ const RealTimeDisplayingData = () => {
                   </span>
                 </InsightInfo>{" "}
                 <InsightInfo>
-                  <span className="bg-primary font-20 p-10 border-none mt-20 w-400  text-center  ">
+                  <span className="text-dark font-20 p-10 border-none mt-20 w-400  text-center  ">
                     {" "}
                     The best selling product:
                   </span>
@@ -97,7 +97,7 @@ const RealTimeDisplayingData = () => {
         <DisplayingContainer>
           <DisplayingSubContainerSecond>
             <div className="d-flex flex-column justify-center align-center w-full">
-              <span className="text-center mb-20 mt-20">
+              <span className="text-center mb-20 mt-20 text-dark">
                 Simply input real time data. We will transform automatically
                 into interactive chart
               </span>

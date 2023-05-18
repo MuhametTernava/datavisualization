@@ -22,6 +22,7 @@
 .color-black {
   color: #000;
 }
+
 .bgwhite {
   background-color: #fff;
 }
@@ -37,8 +38,12 @@
 .text-primary {
   color: #9a7aff;
 }
-.text-secondary {
-  color: #33c37e;
+.text-dark {
+  color: #4f4e4e;
+}
+
+.bg-dark {
+  background-color: #4f4e4e;
 }
 .text-success {
   color: #f2c162;
