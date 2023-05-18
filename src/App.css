@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+* {
+  color: #fff;
+  font-family: "Inter";
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.color-white {
+  color: #fff;
+}
+.color-black {
+  color: #000;
+}
+.bgwhite {
+  background-color: #fff;
+}
+.bg-primary {
+  background-color: #9a7aff;
+}
+.bg-secondary {
+  background-color: #33c37e;
+}
+.bg-success {
+  background-color: #f2c162;
+}
+.text-primary {
+  color: #9a7aff;
+}
+.text-secondary {
+  color: #33c37e;
+}
+.text-success {
+  color: #f2c162;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.p-10 {
+  padding: 10px;
+}
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-between {
+  align-items: space-between;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+.w-50 {
+  width: 50%;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-25 {
+  margin-right: 25px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+.p-10 {
+  padding: 10px;
+}
+.border-none {
+  border: none;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.outline-none {
+  outline: none;
+}
+.text-center {
+  text-align: center;
+}
+
+.w-75 {
+  width: 75px;
+}
+.w-400 {
+  width: 400px;
+}
+
+.w-500 {
+  width: 500px;
+}
