@@ -10,15 +10,18 @@ import {
   ChartCheckLabel,
 } from "../../layouts/layouts";
 
+// Component for uploading data and generating charts
 const UploadData = ({ onFileUpload }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedCharts, setSelectedCharts] = useState([]);
 
+  // Handle file selection
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setSelectedFile(file);
   };
 
+  // Handle file upload and processing
   const handleUpload = () => {
     if (selectedFile) {
       const fileReader = new FileReader();
@@ -41,6 +44,7 @@ const UploadData = ({ onFileUpload }) => {
     }
   };
 
+  // Handle chart selection change
   const handleChartChange = (event) => {
     const chartValue = event.target.value;
     const isChecked = event.target.checked;
@@ -70,6 +74,7 @@ const UploadData = ({ onFileUpload }) => {
 
         <div>
           <p className="text-center text-dark">Select Chart Type:</p>
+          {/* Checkbox inputs for selecting chart types */}
           <ChartCheckBox>
             <ChartCheckLabel>
               Bar Chart
@@ -110,11 +115,10 @@ const UploadData = ({ onFileUpload }) => {
                 onChange={handleChartChange}
               />
             </ChartCheckLabel>
-            {/* Add more checkbox inputs for other chart types */}
           </ChartCheckBox>
         </div>
         <div className="mb-20">
-          <Button onClick={handleUpload}>Submit</Button>
+          <Button onClick={handleUpload}>See Insight</Button>
         </div>
       </InputFieldContainer>
     </DisplayingInputContainer>

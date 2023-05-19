@@ -61,6 +61,36 @@ export const InsightInfo = styled.div`
   font-weight: 700;
 `;
 
+export const InfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Inter";
+
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+`;
+
+export const InfoContainerSpecs = styled.span`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: "Inter";
+
+  color: #4f4e4e;
+  font-style: normal;
+  font-weight: 700;
+`;
+
 export const ChartsBoxDisplay = styled.div`
   display: flex;
   flex-direction: column;

@@ -8,29 +8,38 @@ import {
   InsightInfo,
   ChartsBoxDisplay,
   Button,
+  InfoContainer,
+  InfoContainerSpecs,
 } from "../../layouts/layouts";
 import { Container } from "../../layouts";
-import UseAccordion from "../functions/generateAccordion";
+import UseAccordion from "../functions/generateAccordion2";
 
 import InputData from "../functions/generateInputs";
-import CreateBarChart from "../functions/generateCharts";
+import GenerateCharts from "../functions/generateCharts";
 
 const TypeDisplayingData = () => {
   const Accordion = UseAccordion();
 
+  // State for the submitted data
   const [submittedData, setSubmittedData] = useState([]);
+
+  // State for selected charts
   const [selectedCharts, setSelectedCharts] = useState([]);
 
+  //Updating the selected charts and submitted data state
   const handleFormSubmit = (data, selectedCharts) => {
     setSubmittedData(data);
+
     setSelectedCharts(selectedCharts);
   };
 
+  // Reseting the submitted data and selected charts state
   const handleReset = () => {
     setSubmittedData([]);
     setSelectedCharts([]);
   };
 
+  // Calculate the total sales from the submitted data
   const totalSales = submittedData.reduce(
     (total, product) => total + Number(product.price),
     0
@@ -55,19 +64,27 @@ const TypeDisplayingData = () => {
   return (
     <Container>
       {" "}
+      {/* Displaying the input form */}
       {submittedData.length === 0 ? (
         <TypingContainer>
+          {/* Render the accordion component */}
           {Accordion}
           <DisplayingContainer>
             <DisplayingSubContainer>
-              <InputData onSubmit={handleFormSubmit} />
+              <InfoContainer className="d-flex flex-column justify-center align-center">
+                <InfoContainerSpecs>
+                  After you have input data, click at the See Insight and the
+                  data will transform automatically into interactive chart
+                </InfoContainerSpecs>
+                <InputData onSubmit={handleFormSubmit} />
+              </InfoContainer>
             </DisplayingSubContainer>
           </DisplayingContainer>
         </TypingContainer>
       ) : (
         <div>
+          {/* If data is submitted, display the insight and charts */}
           <TypingContainer>
-            {Accordion}
             <DisplayingContainer>
               <DisplayingSubContainer>
                 <InsightBox>
@@ -94,7 +111,7 @@ const TypeDisplayingData = () => {
                 </InsightBox>
 
                 <ChartsBoxDisplay>
-                  <CreateBarChart
+                  <GenerateCharts
                     products={submittedData}
                     selectedCharts={selectedCharts}
                   />

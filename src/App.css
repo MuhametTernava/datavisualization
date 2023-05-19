@@ -161,6 +161,17 @@
   border: none;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+
+.weight-400 {
+  font-weight: 400;
+}
 .font-20 {
   font-size: 20px;
 }

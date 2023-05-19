@@ -8,7 +8,7 @@ import {
   Button,
   ImageTemplate,
 } from "../../layouts/layouts";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import UploadPic from "../../assets/images/liveDataIcon.png";
 import { Container } from "../../layouts";

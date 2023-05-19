@@ -21,7 +21,7 @@ const HeroPage = () => {
         <BannerContainer>
           <HalfBanner className="d-flex flex-column justify-center align-center">
             <FirstBannerBoxTitle className="text-dark">
-              Let's analyze some data!
+              Business Data Visualization
             </FirstBannerBoxTitle>
             <FirstBannerBoxParagaph className="text-dark">
               Welcome to our Business Data Visualization tool! This tool is

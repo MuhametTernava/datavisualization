@@ -8,10 +8,12 @@ import {
   InsightInfo,
   ChartsBoxDisplay,
   Button,
+  InfoContainer,
+  InfoContainerSpecs,
 } from "../../layouts/layouts";
 import useAccordion from "../functions/generateAccordion";
 import { Container } from "../../layouts";
-import CreateBarChart from "../functions/generateCharts";
+import GenerateCharts from "../functions/generateCharts";
 import UploadData from "../functions/generateDataUpload";
 
 const UploadDisplayingData = () => {
@@ -21,8 +23,10 @@ const UploadDisplayingData = () => {
   const [selectedCharts, setSelectedCharts] = useState([]);
 
   const handleFileUpload = (data, selectedCharts) => {
-    console.log("Submitted Data:", data); // Add this line
-    console.log("Selected Charts:", selectedCharts); // Add this line
+    console.log("Submitted Data:", data);
+    console.log("Selected Charts:", selectedCharts);
+
+    //Updating the selected charts and submitted data state
     setSubmittedData(data);
     setSelectedCharts(selectedCharts);
   };
@@ -45,7 +49,6 @@ const UploadDisplayingData = () => {
   });
 
   // Find the best selling product
-  // Find the best selling product
   let bestSellingProduct = "";
   let maxSales = 0;
   submittedData.forEach((product) => {
@@ -64,15 +67,19 @@ const UploadDisplayingData = () => {
           {Accordion}
           <DisplayingContainer>
             <DisplayingSubContainer>
-              <UploadData onFileUpload={handleFileUpload} />
+              <InfoContainer className="d-flex flex-column justify-center align-center">
+                <InfoContainerSpecs>
+                  After you have input data, click at the See Insight and the
+                  data will transform automatically into interactive chart
+                </InfoContainerSpecs>
+                <UploadData onFileUpload={handleFileUpload} />
+              </InfoContainer>
             </DisplayingSubContainer>
           </DisplayingContainer>
         </TypingContainer>
       ) : (
         <div>
           <TypingContainer>
-            {" "}
-            {Accordion}
             <DisplayingContainer>
               <DisplayingSubContainer>
                 <InsightBox>
@@ -99,7 +106,7 @@ const UploadDisplayingData = () => {
                 </InsightBox>
 
                 <ChartsBoxDisplay>
-                  <CreateBarChart
+                  <GenerateCharts
                     products={submittedData.map((data) => ({
                       name: data.ProductName, // Replace "ProductName" with the actual property name in your Excel sheet
                       price: data.TotalSales, // Replace "ProductPrice" with the actual property name in your Excel sheet

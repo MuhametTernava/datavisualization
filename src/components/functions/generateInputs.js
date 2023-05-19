@@ -13,7 +13,9 @@ import {
   Input,
 } from "../../layouts/layouts";
 
+// Component for gathering and generating inputs from the user
 const InputData = ({ onSubmit }) => {
+  // State for managing the number of inputs and form data
   const [numInputs, setNumInputs] = useState(3);
   const initialFormData = Array.from({ length: 5 }, () => ({
     name: "",
@@ -22,6 +24,7 @@ const InputData = ({ onSubmit }) => {
   const [formData, setFormData] = useState(initialFormData);
   const [selectedCharts, setSelectedCharts] = useState([]);
 
+  // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     onSubmit(formData, selectedCharts);
@@ -29,12 +32,14 @@ const InputData = ({ onSubmit }) => {
     setSelectedCharts([]);
   };
 
+  // Handle input change in the form
   const handleChange = (event, index, field) => {
     const updatedFormData = [...formData];
     updatedFormData[index][field] = event.target.value;
     setFormData(updatedFormData);
   };
 
+  // Handle change in the number of inputs
   const handleNumInputsChange = (event) => {
     const inputCount = parseInt(event.target.value);
     setNumInputs(inputCount);
@@ -43,6 +48,7 @@ const InputData = ({ onSubmit }) => {
     );
   };
 
+  // Handle chart selection change
   const handleChartChange = (event) => {
     const chartValue = event.target.value;
     const isChecked = event.target.checked;
@@ -64,8 +70,9 @@ const InputData = ({ onSubmit }) => {
       {" "}
       <InputFieldContainer>
         <InputFieldForm onSubmit={handleSubmit}>
+          {/* Input field for specifying the number of products */}
           <Label>
-            How many product prices do you want to input:
+            For how many product you want to input data:
             <Input
               className="mb-20"
               type="number"
@@ -74,9 +81,11 @@ const InputData = ({ onSubmit }) => {
               min={1}
             />
           </Label>
+          {/* Render input fields based on the number of products */}
           {formData.map((data, index) => (
             <InputDataContainer key={index}>
               <FormGroup>
+                {/* Input field for product name */}
                 <Label>
                   <span className="text-dark">Product Name: </span>
                   <Input
@@ -89,7 +98,8 @@ const InputData = ({ onSubmit }) => {
               </FormGroup>
               <FormGroup>
                 <Label>
-                  <span className="text-dark">Product Sales: </span>
+                  {/* Input field for product price */}
+                  <span className="text-dark">Total Product Sales: </span>
                   <Input
                     type="number"
                     value={data.price}
@@ -103,6 +113,7 @@ const InputData = ({ onSubmit }) => {
           <div>
             <p className="text-center text-dark">Select Chart Type:</p>
             <ChartCheckBox>
+              {/* Checkbox inputs for selecting chart types */}
               <ChartCheckLabel>
                 Bar Chart
                 <ChartCheckInput
@@ -142,12 +153,11 @@ const InputData = ({ onSubmit }) => {
                   onChange={handleChartChange}
                 />
               </ChartCheckLabel>
-              {/* Add more checkbox inputs for other chart types */}
             </ChartCheckBox>
           </div>
 
           <div className="mb-20">
-            <Button type="submit">Submit</Button>
+            <Button type="submit">See Insight</Button>
           </div>
         </InputFieldForm>
       </InputFieldContainer>

@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { AccordionButton } from "../../layouts/layouts";
 
-// Custom hook for rendering an accordion(guidline) component
 const UseAccordion = (accordionText) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Function to toggle the accordion expansion state
-  accordionText = "Important Notice: Data Uploading Guidelines";
+  accordionText = "Important Notice: Data Typing Guidelines";
   const toggleAccordion = () => {
     setIsExpanded(!isExpanded);
   };
 
-  /*It returns: Accordion header and content  */
   return (
     <div className="accordion">
       <AccordionButton
@@ -24,26 +21,23 @@ const UseAccordion = (accordionText) => {
       </AccordionButton>
       {isExpanded && (
         <div className="accordion-content" id="accordion-content">
-          <p className="text-dark">
+          <p className="text-dark weight-400 font-inter">
             For optimal data display, please take note of the following
-            guidelines when uploading your data:
+            guidelines when inputing your data:
           </p>
           <ol>
-            <li className="text-dark">
-              File Format:{" "}
-              <span className="font-bold text-dark">
-                {" "}
-                Upload Excel files (.xlsx) only.{" "}
-              </span>
+            <li className="text-dark weight-400 font-inter">
+              You should decide for how many products you want to add data
             </li>
-            <li className="text-dark">
-              Column Requirements: Ensure your Excel files have two specific
-              columns:{" "}
-              <span className="font-bold text-dark"> "ProductName" </span>and
-              <span className="font-bold text-dark"> "TotalSales" </span> .
+            <li className="text-dark weight-400 font-inter">
+              For each product, you should
+              <span className="font-bold text-dark"> input name </span>of
+              product and{" "}
+              <span className="font-bold text-dark"> total sales </span> of
+              product.
             </li>
           </ol>
-          <p className="text-dark">
+          <p className="text-dark weight-400 font-inter">
             Following these guidelines will enable our system to effectively
             visualize your data and provide accurate insights. Thank you!
           </p>

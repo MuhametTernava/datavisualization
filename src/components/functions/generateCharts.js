@@ -1,11 +1,13 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Bar, Pie, Line, Doughnut } from "react-chartjs-2";
 import { Button } from "../../layouts/layouts";
 import { Chart, CategoryScale, LinearScale, Title } from "chart.js";
 import html2canvas from "html2canvas";
 Chart.register(CategoryScale, LinearScale, Title);
 
-const CreateBarChart = ({ products, selectedCharts }) => {
+// Component for creating bar charts based on user inputs
+const GenerateCharts = ({ products, selectedCharts }) => {
+  // Prepare chart data
   const chartData = {
     labels: products.map((product, index) => `${product.name}`),
     datasets: [
@@ -46,6 +48,7 @@ const CreateBarChart = ({ products, selectedCharts }) => {
     maintainAspectRatio: false,
   };
 
+  // Handle download button click
   const handleDownload = () => {
     const selectedChartTypes = selectedCharts;
 
@@ -116,4 +119,4 @@ const CreateBarChart = ({ products, selectedCharts }) => {
   );
 };
 
-export default CreateBarChart;
+export default GenerateCharts;

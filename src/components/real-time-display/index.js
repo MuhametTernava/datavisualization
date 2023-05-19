@@ -10,23 +10,26 @@ import {
 } from "../../layouts/layouts";
 
 import { Container } from "../../layouts";
-import UseAccordion from "../functions/generateAccordion";
+import UseAccordion from "../functions/generateAccordion2";
 import InputLiveData from "../functions/generateLiveData";
-import CreateBarChart from "../functions/generateCharts";
+import GenerateCharts from "../functions/generateCharts";
 
 const RealTimeDisplayingData = () => {
   const Accordion = UseAccordion();
 
+  // Initialize the form data with empty values for product name and price
   const initialFormData = Array.from({ length: 3 }, () => ({
     name: "",
     price: "",
   }));
   const [formData, setFormData] = useState(initialFormData);
 
+  //  for form submission handler
   const handleFormSubmit = (data) => {
     setFormData(data);
   };
 
+  // Calculate the total sales from the form data
   const calculateTotalSales = () => {
     let totalSales = 0;
     formData.forEach((product) => {
@@ -35,6 +38,7 @@ const RealTimeDisplayingData = () => {
       }
     });
 
+    // Format the total sales with the currency format
     const formattedTotalSales = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
@@ -43,6 +47,7 @@ const RealTimeDisplayingData = () => {
     return formattedTotalSales;
   };
 
+  // Find the best selling product from the form data
   const findBestSellingProduct = () => {
     let bestSellingProduct = null;
     let maxSales = 0;
@@ -55,7 +60,8 @@ const RealTimeDisplayingData = () => {
     return bestSellingProduct;
   };
 
-  const selectedCharts = ["bar", "pie", "line", "doughnut"]; // Add other chart types if needed
+  // Predefined selected chart types
+  const selectedCharts = ["bar", "pie", "line", "doughnut"];
   return (
     <Container>
       <TypingContainer>
@@ -63,6 +69,7 @@ const RealTimeDisplayingData = () => {
         <DisplayingContainer>
           {formData.some((data) => data.name && data.price) && (
             <DisplayingSubContainer>
+              {/* Display the insights */}
               <InsightBox>
                 <InsightInfo>
                   <span className="text-dark font-20 p-10 border-none mt-20 w-400 text-center  ">
@@ -84,8 +91,9 @@ const RealTimeDisplayingData = () => {
                 </InsightInfo>
               </InsightBox>
 
+              {/* Display the charts */}
               <ChartsBoxDisplay>
-                <CreateBarChart
+                <GenerateCharts
                   products={formData}
                   selectedCharts={selectedCharts}
                 />
@@ -93,6 +101,7 @@ const RealTimeDisplayingData = () => {
             </DisplayingSubContainer>
           )}
         </DisplayingContainer>
+        {/* Display the input form */}
         <DisplayingContainer>
           <DisplayingSubContainer>
             <div className="d-flex flex-column justify-center align-center w-full">

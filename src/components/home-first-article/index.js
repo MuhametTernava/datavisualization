@@ -8,7 +8,7 @@ import {
   ImageTemplate,
   Button,
 } from "../../layouts/layouts";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import StickerPen from "../../assets/images/penIcon.png";
 import { Container } from "../../layouts";

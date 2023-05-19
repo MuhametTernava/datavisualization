@@ -10,22 +10,18 @@ export const BannerContainer = styled.div`
 
 export const HalfBanner = styled.div`
   width: 50%;
-  padding-top: 20px;
-  padding-bottom: 20px;
 `;
 
 //DUHET ME I NDRYSHU SPANAT!!
-/**/ export const FirstBannerBoxTitle = styled.span`
+/**/ export const FirstBannerBoxTitle = styled.h1`
   font-size: 40px;
-  height: 59px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   width: 95%;
-  margin-top: 20px;
 `;
 //DUHET ME I NDRYSHU SPANAT!!
-export const FirstBannerBoxParagaph = styled.span`
+export const FirstBannerBoxParagaph = styled.p`
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -33,7 +29,7 @@ export const FirstBannerBoxParagaph = styled.span`
   line-height: 150%;
   width: 95%;
 
-  margin-top: 10px;
+  margin-top: 5px;
 `;
 
 export const ImageTemplate = styled.img`
