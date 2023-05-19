@@ -25,10 +25,6 @@ To run the application locally, follow these steps:
   - Start the development server: npm start
   - Open a web browser and visit http://localhost:? to access the application.
 
-## Screenshots
-- ..
--
-
 ## Demo Video
 - ..
 
