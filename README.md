@@ -51,7 +51,18 @@ To run the application locally, follow these steps:
 # STRUCTURE:
 ## SOURCES:
 
- - Assets: css, fonts, icons, images: logo.png, metrics.png, stickerpen.png , mixins, sasss, svg, variables
+ - Assets: 
+ 	- css, 
+ 	- fonts, 
+ 	- icons, 
+ 	- images: 
+ 		- logo.png, 
+ 		- metrics.png, 
+ 		- stickerpen.png, 
+ 		- mixins, 
+ 		- sasss, 
+ 		- svg, 
+ 		- variables
  
  - Components: 
 	- Navigation: index.js, layouts.js
