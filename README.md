@@ -6,13 +6,15 @@ This is a React application for visualizing business data through interactive ch
 - User-friendly interface for data input
 - Real-time updates of charts based on data changes
 - Support for various chart types: bar chart, line chart, and pie chart
-- Basic error handling for data input
+- Support for downloading chart types: bar chart, line chart, and pie chart
 
 ## Technologies and Libraries Used
 - React: JavaScript library for building user interfaces
 - HTML and CSS: Used for the UI design
 - styled-components: Library for styling React components
 - Chart.js: JavaScript charting library for creating interactive charts
+- XlSX: Library for reading, writing, and manipulating Excel files in JavaScript.
+- html2canvas: JavaScript library for capture elements from the HTML page and perform operations such as or exporting them as an image.
 
 ## Installation and Setup
 To run the application locally, follow these steps:
