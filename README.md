@@ -47,12 +47,12 @@ To run the application locally, follow these steps:
  - npm install html2canvas
   library that can capture the content of an HTML element, including the 	chart, and generate an image.
 
-#STRUCTURE:
+# STRUCTURE:
 ## SOURCES:
  - Assets: css, fonts, icons, images: logo.png, metrics.png, stickerpen.png , mixins, sasss, svg, variables
  - Components: 
-	.Navigation: index.js, layouts.js
-	.Header: index.js
+	- Navigation: index.js, layouts.js
+	- Header: index.js
 	3.Footer: index.js, layouts.js
 	4.Home-Hero: index.js, layouts.js
 	5.Home-First-Article: index.js, layouts.js
