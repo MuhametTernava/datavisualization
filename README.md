@@ -1,4 +1,4 @@
-# Business Data Visualization React Application
+# Business Data Visualization React App
 
 This is a React application for visualizing business data through interactive charts. It allows users to input data and generate different types of charts based on their choices.
 
