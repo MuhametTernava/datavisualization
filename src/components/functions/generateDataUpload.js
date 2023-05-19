@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as XLSX from "xlsx";
 import {
-  SecondButton,
+  Button,
   DisplayingInputContainer,
   InputFieldContainer,
   ProductLabel,
@@ -114,7 +114,7 @@ const UploadData = ({ onFileUpload }) => {
           </ChartCheckBox>
         </div>
         <div className="mb-20">
-          <SecondButton onClick={handleUpload}>Submit</SecondButton>
+          <Button onClick={handleUpload}>Submit</Button>
         </div>
       </InputFieldContainer>
     </DisplayingInputContainer>

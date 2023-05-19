@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import {
   TypingContainer,
   DisplayingContainer,
-  DisplayingSubContainerSecond,
+  DisplayingSubContainer,
   InsightBox,
   InsightInfo,
   ChartsBoxDisplay,
@@ -59,9 +59,9 @@ const TypeDisplayingData = () => {
         <TypingContainer>
           {Accordion}
           <DisplayingContainer>
-            <DisplayingSubContainerSecond>
+            <DisplayingSubContainer>
               <InputData onSubmit={handleFormSubmit} />
-            </DisplayingSubContainerSecond>
+            </DisplayingSubContainer>
           </DisplayingContainer>
         </TypingContainer>
       ) : (
@@ -69,7 +69,7 @@ const TypeDisplayingData = () => {
           <TypingContainer>
             {Accordion}
             <DisplayingContainer>
-              <DisplayingSubContainerSecond>
+              <DisplayingSubContainer>
                 <InsightBox>
                   <InsightInfo>
                     <span className="text-dark font-20 p-10 border-none mt-20 w-400 text-center  ">
@@ -102,7 +102,7 @@ const TypeDisplayingData = () => {
                 <Button className=" ml-10 mb-20 mt-10" onClick={handleReset}>
                   Reset Data
                 </Button>
-              </DisplayingSubContainerSecond>
+              </DisplayingSubContainer>
             </DisplayingContainer>
           </TypingContainer>
         </div>

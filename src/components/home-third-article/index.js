@@ -5,8 +5,7 @@ import {
   SubBannerContainer,
   SubBannerBoxTitle,
   SubBannerBoxParagaph,
-  ButtonContainer,
-  HomeButton,
+  Button,
   ImageTemplate,
 } from "../../layouts/layouts";
 import { Link, useNavigate } from "react-router-dom";
@@ -37,16 +36,14 @@ const ThirdArticle = () => {
               data, our service empowers you to visualize your data in real
               time, enabling you to make informed decisions with confidence.
             </SubBannerBoxParagaph>
-            <ButtonContainer>
-              <HomeButton>
-                <Link
-                  className="text-decoration-none "
-                  to="/real-time-visualization"
-                >
-                  Get Started
-                </Link>
-              </HomeButton>
-            </ButtonContainer>
+            <Button className="mt-20">
+              <Link
+                className="text-decoration-none "
+                to="/real-time-visualization"
+              >
+                Get Started
+              </Link>
+            </Button>
           </SubBannerContainer>
         </BannerContainer>
       </HeroContainer>

@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import {
-  SecondButton,
+  Button,
   InputDataContainer,
-  LabelDataContainer,
   DisplayingInputContainer,
   InputFieldContainer,
   InputFieldForm,
-  ProductLabel,
-  ProductInput,
   ChartCheckBox,
   ChartCheckInput,
   ChartCheckLabel,
-  FormContainer,
   FormGroup,
   Label,
   Input,
@@ -93,7 +89,7 @@ const InputData = ({ onSubmit }) => {
               </FormGroup>
               <FormGroup>
                 <Label>
-                  <span className="text-dark">Product Price: </span>
+                  <span className="text-dark">Product Sales: </span>
                   <Input
                     type="number"
                     value={data.price}
@@ -151,7 +147,7 @@ const InputData = ({ onSubmit }) => {
           </div>
 
           <div className="mb-20">
-            <SecondButton type="submit">Submit</SecondButton>
+            <Button type="submit">Submit</Button>
           </div>
         </InputFieldForm>
       </InputFieldContainer>

@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
+export const HeroContainer = styled.div`
+  background-color: #fff;
 
+  padding: 10px;
+`;
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
@@ -22,7 +26,7 @@ export const DisplayingContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 `;
-export const DisplayingSubContainerSecond = styled.div`
+export const DisplayingSubContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -65,32 +69,9 @@ export const ChartsBoxDisplay = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #fff;
-  margin-left: 7px;
+  margin-left: 10px;
 `;
 export const Button = styled.button`
-  padding: 10px 10px;
-  width: 150px;
-  height: 50px;
-  color: #fff;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Add transition property */
-  font-size: 20px;
-  background-color: #4f4e4e;
-  border: 1px solid #4f4e4e;
-
-  &:hover {
-    color: #fff;
-    background-color: #f2c162;
-    border: 1px solid #f2c162;
-  }
-`;
-
-export const SecondButton = styled.button`
   padding: 10px 10px;
   width: 150px;
   height: 50px;
@@ -138,7 +119,7 @@ export const AccordionButton = styled.button`
   }
 `;
 
-//
+//FOR DATA DISPLAYING:
 
 export const InputDataContainer = styled.div`
   width: 100%;
@@ -237,11 +218,6 @@ export const FormContainer = styled.form`
 `;
 
 //HOME LAYOUTS:
-export const HeroContainer = styled.div`
-  background-color: #fff;
-
-  padding: 10px;
-`;
 
 export const BannerContainer = styled.div`
   margin-bottom: 20px;
@@ -299,28 +275,4 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   width: 95%;
   margin-top: 20px;
-`;
-
-export const HomeButton = styled.button`
-  padding: 10px 20px;
-  width: 230px;
-  height: 65px;
-
-  height: 59px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-
-  border: none;
-  cursor: pointer;
-  margin: 0 10px;
-  transition: background-color 0.3s, transform 0.3s; /* Add transition property */
-  font-size: 20px;
-  background-color: #4f4e4e;
-
-  &:hover {
-    color: #fff;
-    background-color: #f2c162;
-    transform: scale(1.1); /* Apply zoom-in effect on hover */
-  }
 `;

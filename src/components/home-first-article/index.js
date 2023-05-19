@@ -5,9 +5,8 @@ import {
   SubBannerContainer,
   SubBannerBoxTitle,
   SubBannerBoxParagaph,
-  ButtonContainer,
-  HomeButton,
   ImageTemplate,
+  Button,
 } from "../../layouts/layouts";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -37,16 +36,11 @@ const FirstArticle = () => {
               or explore trends, our service empowers you to visualize your data
               with ease.
             </SubBannerBoxParagaph>
-            <ButtonContainer>
-              <HomeButton>
-                <Link
-                  className="text-decoration-none"
-                  to="/typing-visualization"
-                >
-                  Get Started
-                </Link>
-              </HomeButton>
-            </ButtonContainer>
+            <Button className="mt-20">
+              <Link className="text-decoration-none" to="/typing-visualization">
+                Get Started
+              </Link>
+            </Button>
           </SubBannerContainer>
         </BannerContainer>
       </HeroContainer>

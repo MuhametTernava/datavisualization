@@ -3,11 +3,10 @@ import React, { useState, useEffect, useRef } from "react";
 import {
   TypingContainer,
   DisplayingContainer,
-  DisplayingSubContainerSecond,
+  DisplayingSubContainer,
   InsightBox,
   InsightInfo,
   ChartsBoxDisplay,
-  Button,
 } from "../../layouts/layouts";
 
 import { Container } from "../../layouts";
@@ -63,7 +62,7 @@ const RealTimeDisplayingData = () => {
         {Accordion}
         <DisplayingContainer>
           {formData.some((data) => data.name && data.price) && (
-            <DisplayingSubContainerSecond>
+            <DisplayingSubContainer>
               <InsightBox>
                 <InsightInfo>
                   <span className="text-dark font-20 p-10 border-none mt-20 w-400 text-center  ">
@@ -91,11 +90,11 @@ const RealTimeDisplayingData = () => {
                   selectedCharts={selectedCharts}
                 />
               </ChartsBoxDisplay>
-            </DisplayingSubContainerSecond>
+            </DisplayingSubContainer>
           )}
         </DisplayingContainer>
         <DisplayingContainer>
-          <DisplayingSubContainerSecond>
+          <DisplayingSubContainer>
             <div className="d-flex flex-column justify-center align-center w-full">
               <span className="text-center mb-20 mt-20 text-dark">
                 Simply input real time data. We will transform automatically
@@ -103,7 +102,7 @@ const RealTimeDisplayingData = () => {
               </span>
               <InputLiveData onSubmit={handleFormSubmit} />
             </div>
-          </DisplayingSubContainerSecond>
+          </DisplayingSubContainer>
         </DisplayingContainer>{" "}
       </TypingContainer>
     </Container>

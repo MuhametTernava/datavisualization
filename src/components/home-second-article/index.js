@@ -5,8 +5,7 @@ import {
   SubBannerContainer,
   SubBannerBoxTitle,
   SubBannerBoxParagaph,
-  ButtonContainer,
-  HomeButton,
+  Button,
   ImageTemplate,
 } from "../../layouts/layouts";
 
@@ -36,16 +35,11 @@ const SecondArticle = () => {
               you're working with large datasets, importing external sources,
               our service makes data visualization hassle-free.
             </SubBannerBoxParagaph>
-            <ButtonContainer>
-              <HomeButton>
-                <Link
-                  className="text-decoration-none"
-                  to="/upload-visualization"
-                >
-                  Get Started
-                </Link>
-              </HomeButton>
-            </ButtonContainer>
+            <Button className="mt-20">
+              <Link className="text-decoration-none" to="/upload-visualization">
+                Get Started
+              </Link>
+            </Button>
           </SubBannerContainer>
         </BannerContainer>
       </HeroContainer>

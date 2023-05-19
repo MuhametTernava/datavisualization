@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import {
   TypingContainer,
   DisplayingContainer,
-  DisplayingSubContainerSecond,
+  DisplayingSubContainer,
   InsightBox,
   InsightInfo,
   ChartsBoxDisplay,
@@ -63,9 +63,9 @@ const UploadDisplayingData = () => {
           {" "}
           {Accordion}
           <DisplayingContainer>
-            <DisplayingSubContainerSecond>
+            <DisplayingSubContainer>
               <UploadData onFileUpload={handleFileUpload} />
-            </DisplayingSubContainerSecond>
+            </DisplayingSubContainer>
           </DisplayingContainer>
         </TypingContainer>
       ) : (
@@ -74,7 +74,7 @@ const UploadDisplayingData = () => {
             {" "}
             {Accordion}
             <DisplayingContainer>
-              <DisplayingSubContainerSecond>
+              <DisplayingSubContainer>
                 <InsightBox>
                   <InsightInfo>
                     <span className="text-dark font-20 p-10 border-none mt-20 w-400 text-center  ">
@@ -107,10 +107,10 @@ const UploadDisplayingData = () => {
                     selectedCharts={selectedCharts}
                   />
                 </ChartsBoxDisplay>
-                <Button className=" ml-10 mb-20 mt-20" onClick={handleReset}>
+                <Button className=" ml-10 mb-20 mt-10" onClick={handleReset}>
                   Reset Data
                 </Button>
-              </DisplayingSubContainerSecond>
+              </DisplayingSubContainer>
             </DisplayingContainer>
           </TypingContainer>
         </div>

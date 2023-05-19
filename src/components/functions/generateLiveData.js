@@ -32,7 +32,7 @@ const InputLiveData = ({ onSubmit }) => {
           </Label>
 
           <Label>
-            Product Price:
+            Product Sales:
             <Input
               className="color-black"
               type="number"
