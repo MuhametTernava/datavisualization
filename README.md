@@ -30,24 +30,6 @@ To run the application locally, follow these steps:
 ## Demo Video
 - ..
 
-
-## PACKAGES:
- - npm install @emotion/react @emotion/styled 
- this package is used for styling in React applications that use Emotion as the CSS-in-JS library. To resolve this issue, you can follow these steps:
- 
- - npm install react-chartjs-2 chart.js
-  registering the Chart.js packages
- If error occurs: 
-  npm uninstall chart.js react-chartjs-2
-	npm install chart.js@3.6.2 react-chartjs-2@3.0.4
- 
- - npm install xlsx
- - npm install core-js xlsx-style
- 
- - npm install html2canvas
-  library that can capture the content of an HTML element, including the 	chart, and generate an image.
-
-
 # STRUCTURE:
 ## SOURCES:
 
@@ -103,7 +85,18 @@ To run the application locally, follow these steps:
 		- 11.Real-Time-Display: 
 			- index.js
 
-
+## PACKAGES:
+ - npm install @emotion/react @emotion/styled 
+ 	- this package is used for styling in React applications that use Emotion as the CSS-in-JS library.
+ - npm install react-chartjs-2 chart.js
+ 	- registering the Chart.js packages
+ 	- If error occurs: 
+ 		- npm uninstall chart.js react-chartjs-2
+		- npm install chart.js@3.6.2 react-chartjs-2@3.0.4
+ - npm install xlsx
+ - npm install core-js xlsx-style
+ - npm install html2canvas
+ 	- library that can capture the content of an HTML element, including the chart, and generate an image.
 
 
 
