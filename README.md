@@ -54,6 +54,7 @@ To run the application locally, follow these steps:
 	- Home-Third-Article: index.js, layouts.js
 	- Functions: 
 		- generateAccordion.js, 
+		- generateAccordion2.js, 
 		- generateCharts.js
 		- generateInputs.js, 
 		- generateDataUpload.js
