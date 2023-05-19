@@ -31,7 +31,7 @@ To run the application locally, follow these steps:
 - ..
 
 
-##PACKAGES:
+## PACKAGES:
  - npm install @emotion/react @emotion/styled 
  this package is used for styling in React applications that use Emotion as the CSS-in-JS library. To resolve this issue, you can follow these steps:
  
@@ -47,8 +47,8 @@ To run the application locally, follow these steps:
  - npm install html2canvas
   library that can capture the content of an HTML element, including the 	chart, and generate an image.
 
-##STRUCTURE:
-#SOURCES:
+## STRUCTURE:
+# SOURCES:
  - Assets: css, fonts, icons, images: logo.png, metrics.png, stickerpen.png , mixins, sasss, svg, variables
  - Components: 
 	1.Navigation: index.js, layouts.js
