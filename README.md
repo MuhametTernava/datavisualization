@@ -47,33 +47,50 @@ To run the application locally, follow these steps:
  - npm install html2canvas
   library that can capture the content of an HTML element, including the 	chart, and generate an image.
 
+
 # STRUCTURE:
 ## SOURCES:
+
  - Assets: css, fonts, icons, images: logo.png, metrics.png, stickerpen.png , mixins, sasss, svg, variables
+ 
  - Components: 
 	- Navigation: index.js, layouts.js
 	- Header: index.js
-	3.Footer: index.js, layouts.js
-	4.Home-Hero: index.js, layouts.js
-	5.Home-First-Article: index.js, layouts.js
-	6.Home-Second-Article: index.js, layouts.js
-	7.Home-Third-Article: index.js, layouts.js
-	8.Functions: 
-		1.generateAccordion.js, 
-		2.generateCharts.js
-		3.generateInputs.js, 
-		4.generateDataUpload.js
-		5.generateLiveData.js
-	9.Type-Display: index.js: generateAccordion.js, generateCharts.js, 				generateInputs.js
-	10.Upload-Display: index.js: generateAccordion.js, generateCharts.js, 				generateDataUpload.js
-	11.Real-Time-Display: index.js: generateAccordion.js, generateCharts.js, 		generateLiveData.js
+	- Footer: index.js, layouts.js
+	- Home-Hero: index.js, layouts.js
+	- Home-First-Article: index.js, layouts.js
+	- Home-Second-Article: index.js, layouts.js
+	- Home-Third-Article: index.js, layouts.js
+	- Functions: 
+		- generateAccordion.js, 
+		- generateCharts.js
+		- generateInputs.js, 
+		- generateDataUpload.js
+		- generateLiveData.js
+	- Type-Display: 
+		- index.js: (3)functions: generateAccordion2.js, generateCharts.js, generateInputs.js
+	- Upload-Display: 
+		- index.js: (3)functions: generateAccordion.js, generateCharts.js, generateDataUpload.js
+	- Real-Time-Display: 
+		- index.js: (3)functions: generateAccordion2.js, generateCharts.js, generateLiveData.js
 	
  - Layouts: index.js, layouts.js
+ 
  - Pages:
-	1.home.js: 4.Home-Hero, 5.Home-First-Article, 6.Home-Second-				Article, 7.Home-Third-Article
-	2.typing-visualization.js: 9.Type-Display: index.js
-	3.upload-visualization.js: 10.Type-Display: index.js
-	4.real-time-visualization.js: 11.Real-Time-Display: index.js
+	- home.js: 
+		- 4.Home-Hero, 
+		- 5.Home-First-Article, 
+		- 6.Home-Second-Article, 
+		- 7.Home-Third-Article
+	- typing-visualization.js: 
+		- 9.Type-Display: 
+			-index.js
+	- upload-visualization.js: 
+		- 10.Type-Display: 
+			- index.js
+	- real-time-visualization.js: 
+		- 11.Real-Time-Display: 
+			- index.js
 
 
 
