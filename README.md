@@ -26,7 +26,6 @@ To run the application locally, follow these steps:
   - Open a web browser and visit http://localhost:? to access the application.
 
 ## Short video demonstrating the functionality of the application
-- https://www.youtube.com/watch?v=1ZHGFt2a9vE
 - https://www.youtube.com/watch?v=RbmALYWBE9g&t=17s
 
 # STRUCTURE:
